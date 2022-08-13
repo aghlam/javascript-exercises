@@ -1,5 +1,15 @@
-const removeFromArray = function() {
+const removeFromArray = function(arr, ...element) {
 
+
+    for (const ele of element) {
+        const index = arr.indexOf(ele);
+        if (index != -1) {
+
+            arr.splice(index, 1);
+        }
+    }
+
+    return arr;
 };
 
 // Do not edit below this line
